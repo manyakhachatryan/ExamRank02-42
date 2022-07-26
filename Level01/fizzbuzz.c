@@ -6,7 +6,7 @@
 /*   By: manykhac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 15:39:55 by manykhac          #+#    #+#             */
-/*   Updated: 2022/07/25 15:59:14 by manykhac         ###   ########.fr       */
+/*   Updated: 2022/07/26 15:22:31 by manykhac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,17 +36,17 @@ int main()
 	int i;
 	for(i = 1; i <= 100; i++)
 	{
-		if (i %3 == 0)
+		if (i %3 == 0 && i % 5 == 0)
 		{
-			write (1, "fizz", 5);
+			write (1, "fizzbuzz", 9);
 		}
 		else if (i % 5 == 0)
 		{
 			write (1, "buzz", 5);
 		}
-		else if (i % 5 == 0 && i % 3 == 0)
+		else if (i % 3 == 0)
 		{
-			write (1, "fizzbuzz", 9);
+			write (1, "fizz", 5);
 		}
 		else 
 		{
